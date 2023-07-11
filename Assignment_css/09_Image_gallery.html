@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display grid</title>
+ 
+        <style>
+        .main{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+             gap:20px;
+            justify-items: center;
+            transition: 1s all ease;
+          
+
+        } 
+        .sub1:hover{
+            transform:rotateX(25deg) rotateY(25deg)rotatez(180deg);
+        }
+        .sub2:hover{
+            transform: rotate3d(1,1,1 ,95deg);
+        }
+        .sub3:hover{
+            transform: scale(1.2);
+        }
+        .sub4:hover{
+            transform: skewX(30deg);
+            
+        }
+        .sub5{
+            transform: rotate3d(1,1,1 ,95deg);
+        }
+        .sub6:hover{
+            transform:translateX(40px);
+        }
+        .sub7:hover{
+            transform: matrix(1,2,0,1,10,30);
+        }
+        .sub8:hover{
+            transform:rotate(-180deg);
+        }
+      
+        
+       
+        .main img{
+            height: 250px;
+            width: 250px;
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub1"><img src="image_ass/birds_1.jpg" alt=""></div>
+        <div class="sub2"><img src="image_ass/birds_2.jpg" alt=""></div>
+        <div class="sub3"><img src="image_ass/birds_3.jpg" alt=""></div>
+        <div class="sub4"><img src="image_ass/birds_4.jpg" alt=""></div>
+        <div class="sub5"><img src="image_ass/birds_5.jpg" alt=""></div>
+        <div class="sub6"><img src="image_ass/birds_6.jpg" alt=""></div>
+        <div class="sub7"><img src="image_ass/birds_7.jpg" alt=""></div>
+        <div class="sub8"><img src="image_ass/birds_8.jpg" alt=""></div>
+        
+    </div>
+</body>
+</html>

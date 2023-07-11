@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 80;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .regform{
+            border: 2px solid white;
+            padding: 20px;
+            width: 730px;
+            margin: auto;
+            background-color: white;
+        }
+        .boxform{
+            border:5px solid green;
+            padding: 80px;
+            width:900px;
+            margin:auto;
+            background-color: green;
+        }
+        h1{
+            padding-bottom: 20px;
+            text-align: center;
+            
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            padding: 10px;
+        }
+        input[type="text"],[type="date"],select,[type="password"]{
+            height: 30px;
+            width: 300px;
+            padding: 0px 5px;
+            border-radius: 5px;
+        }
+        textarea{
+            width: 300px;
+            padding: 0px 5px;
+        }
+    
+        button{
+            height: 35px;
+            width: 250px;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            border: 2px solid blue;
+           
+        }
+        
+    </style>
+</head>
+<body>
+<div class="boxform">
+    <div class="regform">
+        <h1>Registation For job</h1>
+        <form action="#">
+            <!-- firstname -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Firstname</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="" placeholder="Enter First Name">
+                </div>
+                
+            </div>
+             <!-- middle Name -->
+             <div class="row">
+                <div class="col">
+                    <label for="">Middle Name</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id=""placeholder="Enter Middle Name">
+                </div>
+                
+            </div>
+            <!-- lastname -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Lastname</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id=""placeholder="Enter Last Name">
+                </div>
+                
+            </div>
+            <!-- address  -->
+            <div class="row">
+                <div class="col">
+                    <label for="">address</label>
+                </div>
+                <div class="col">
+                    <textarea name="" id="addr" cols="40" rows="5" placeholder="Enter address"></textarea>
+                </div>
+                
+            </div>
+             <!-- birthdate -->
+             <div class="row">
+                <div class="col">
+                    <label for="">Birthdate</label>
+                </div>
+                <div class="col">
+                    <input type="date" name="" id="">
+                </div>
+               
+            </div>
+            <!-- gender -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Gender</label>
+                </div>
+                <div class="col">
+                    <input type="radio" name="gen" id="">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female">
+                    <label for="">Female</label>
+                </div>
+                
+            </div>
+           
+            
+            <!-- Experiance -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Experiance</label>
+                </div>
+                <div class="col">
+                    <select name="" id="">
+                        <option value="">--- select ---</option>
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+
+                    </select>
+                </div>
+               
+            </div>
+            <!-- mobile no -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Mobile No</label>
+                </div>
+                <div class="col">
+                   <input type="text" name="" id="" placeholder="Enter the Moblie no">
+                </div>
+               
+            </div>
+            <!-- Email id -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Email Id</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="" placeholder="Enter Email">
+                </div>
+                
+            </div>
+            <!-- password -->
+            <div class="row">
+                <div class="col">
+                    <label for=""> create Password</label>
+                </div>
+                <div class="col passcol">
+                    <input type="password" name="" id="" placeholder="Enter Password"> 
+                </div>
+                
+            </div>
+            <!-- show password -->
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                   <input type="checkbox">
+                   <label for="">show password</label>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+           
+            <!-- button -->
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button type="submit">Register</button>
+                </div>
+                <div class="col">
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>
